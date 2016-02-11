@@ -1,0 +1,119 @@
+/* Navigatie */
+
+.navbar {
+	background-color: #ffffff;
+	border-bottom: 1px solid #e2e2e2;
+	text-decoration: none;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #000000;
+} 
+
+.navbar-inverse .navbar-brand:focus, 
+.navbar-inverse .navbar-brand:hover {
+	color: #00a3db;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #00a3db;
+}
+
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:focus, 
+.navbar-inverse .navbar-nav>.active>a:hover {
+	background-color: inherit;
+	color: #00a3db;
+}
+
+.navbar-inverse .navbar-toggle {
+	background-color: #eee;
+}
+	
+.navbar-inverse .navbar-toggle:focus, 
+.navbar-inverse .navbar-toggle:hover {
+	background-color: #00a3db;
+}
+
+.navbar-inverse .navbar-toggle {
+	border: none;
+}
+
+hr {
+	border-top: 1px solid #00A6DF;
+}
+
+a#current {
+	color: #00a3db;
+}
+
+/* Homepage */
+
+.jumbotron {
+	background-image: url('../images/jumbo-bg3.png');
+	background-color: #E2E2E2;
+}
+
+.logo-big {
+	margin: 30px 0px 30px 0px;
+}
+
+h2, h4 {
+	color: #00a3db;
+}
+
+.motto {
+	text-align: center;
+}
+
+/* Contact */
+
+form {
+	margin-top: 10em;
+}
+
+.well {
+	border: 1px solid #00a3db
+}
+
+/* Coaches */
+.jumbotroncoaches {
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+}
+
+.coachesintro {
+    text-align:center;
+}
+
+.coach {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	text-align: justify;
+}
+
+.coachnaam {
+	font-weight: bold;
+	text-align: center;
+}
+
+.coach hr {
+	width: 50%;
+}
+
+.ppic {
+	display: block;
+	width: 150px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.adminkey {
+	display: inline-block;
+	float: right;
+	height: 15px;
+	width: 15px;
+}
