@@ -2,11 +2,11 @@
 session_start();
 
 //Requires Database connection
-include_once 'includes/dbConnect.php';
+include_once 'dbconnect.php';
 
 if (isset($_POST['submit'])) {
-    $uid = htmlentities($_POST['uid']);
-    $pwd = htmlentities($_POST['pwd']);
+    $uid = htmlentities($_POST['admin_user']);
+    $pwd = htmlentities($_POST['admin_password']);
 
     //Check if data is valid & generate error if not so
     if ($uid == "") {
@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
     $enryptUid=md5($uid);
     $enryptPwd=md5($pwd);
 
-    $sql = "SELECT * FROM user WHERE uid='$enryptUid' AND pwd='$enryptPwd'";
+    $sql = "SELECT * FROM admin WHERE uid='$enryptUid' AND pwd='$enryptPwd'";
 
     $result = mysqli_query($db, $sql);
 
