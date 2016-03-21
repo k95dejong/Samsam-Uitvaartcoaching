@@ -1,7 +1,7 @@
       <hr>
 
       <footer>
-        <p>&copy; SamSam Uitvaartcoaching 2015<?php if ($pageName=="Coaches") echo '<a href="inlog.php"><img class="adminkey" src="images/admin.png"/></a>'; ?></p>
+        <p>&copy; SamSam Uitvaartcoaching 2015<?php if ($pageName=="Coaches") echo '<a href="coacheslist.php"><img class="adminkey" src="images/admin.png"/></a>'; ?></p>
       </footer>
     </div> <!-- /container -->
 

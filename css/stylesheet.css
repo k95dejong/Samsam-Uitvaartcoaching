@@ -121,30 +121,27 @@ form {
 }
 
 /* ======================== LOGIN ======================== */
-.error p {
+.loginError {
 	color: red;
-	text-align: center;
-
+	margin-top: 10px;
+	font-weight: bold;
 }
 
-.upload {
-	text-align: center;
-	margin: 50px auto;
-	height: 200px;
-	width: 255px;
-	border-style: solid;
+/* ======================== EDIT OVERZICHT ======================== */
+.overzichtTitle {
+	margin-top: 50px;
 }
 
-.delete {
-	margin: 5px;
+.coachesList {
+	width: 100%;
+	border: 1px solid #d4d8db;
+	border-collapse: collapse;
 }
 
-.upload p {
-	text-align: left;
+.coachesList td, .coachesList th {
+	border: 1px solid #e2e2e2;
 }
 
-.editblock {
-    width: 200px;
-    margin: 0 20px;
-    float: left;
-}
+/*.tableDescription {*/
+	/*width: 50%;*/
+/*}*/
