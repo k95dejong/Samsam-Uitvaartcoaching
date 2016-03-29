@@ -7,7 +7,7 @@
 		<div class="col-sm-8 col-sm-offset-2">
 			<div class="well" style="margin-top: 10%;">
 				<h3>Contactformulier</h3>
-				<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+				<p>Verstuur via dit formulier een contact of opmerking naar onze organisatie. Wij zullen de vraag of opmerking zo spoedig mogelijk verwerken. </p>
 				<form role="form" id="contactForm" data-toggle="validator" class="shake">
 					<div class="row">
 						<div class="form-group col-sm-6">

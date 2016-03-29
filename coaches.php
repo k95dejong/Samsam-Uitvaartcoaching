@@ -12,9 +12,12 @@
     <div class="container">
         <div class="coaches">
             <?php
+            $count = 1;
             //run the query
             $sql = "SELECT * FROM `coaches` WHERE `coaches_type` = 1";
             $result = $conn->query($sql);
+
+            $rowcount=mysqli_num_rows($result);
 
             if ($result->num_rows > 0) {
                 // output data of each row
@@ -24,7 +27,7 @@
                     $description = $row["coaches_description"];
                     $id = $row["coaches_id"];
 
-                    if (($id === '1') || ($id === '4')) {
+                    if (($count === 1) || ($count === 4)) {
                         echo '<div class="row">';
                     };
 
@@ -35,9 +38,11 @@
                           <p>' . $description . '</p>
                           </div>';
 
-                    if (    ($id === '3')|| ($id === '6 ')) {
+                    if (    ($count === 3)|| ($count === 6 )) {
                          echo '</div>';
                     };
+
+                    $count++;
                 }
 
             } else {
