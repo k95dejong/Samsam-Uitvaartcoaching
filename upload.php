@@ -1,11 +1,10 @@
 <?php
-require('dbconnect.php');
-include('head.php');
 session_start();
-
-if (!(isset($_SESSION['login']) && $_SESSION['login'] != '')) {
+if(!isset($_SESSION['login'])) {
     header ("Location: inlog.php");
 }
+require('dbconnect.php');
+include('head.php');
 
 if(isset($_FILES['image'])){
     $status = "";
@@ -44,11 +43,13 @@ if(isset($_FILES['image'])){
     <div class="container">
     <h2 class="overzichtTitle">Foto upload</h2>
 
+    <div class="coachForm">
         <form action="" method="POST" enctype="multipart/form-data">
         <input type="file" name="image" />
-        <input type="submit"/>
+            <br>
+        <input type="submit" value="Uploaden"/>
         </form>
         <br>
         <p><?php echo $status;?></p>
-
+    </div>
 <?php include ('footer.php'); ?>

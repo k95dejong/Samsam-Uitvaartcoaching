@@ -1,10 +1,11 @@
-<?php include('head.php');
-include('dbconnect.php');
+<?php
 session_start();
-
-if (!(isset($_SESSION['login']) && $_SESSION['login'] != '')) {
+if(!isset($_SESSION['login'])) {
     header ("Location: inlog.php");
-} ?>
+}
+
+include('head.php');
+include('dbconnect.php'); ?>
 
 <div class="container">
 
@@ -12,12 +13,11 @@ if (!(isset($_SESSION['login']) && $_SESSION['login'] != '')) {
 <table class="coachesList">
     <thead>
     <tr>
-        <th><strong>#</strong></th>
         <th><strong>Naam</strong></th>
         <th><strong>Omschrijving</strong></th>
-        <th><strong>Foto</strong></th>
-        <th><strong>Bewerken</strong></th>
-        <th><strong>Verwijderen</strong></th>
+        <th></th>
+        <th></th>
+        <th></th>
     </tr>
     </thead>
     <tbody>
@@ -28,10 +28,7 @@ if (!(isset($_SESSION['login']) && $_SESSION['login'] != '')) {
 
     while($row = $result->fetch_assoc()) { ?>
         <tr>
-            <td>
-                <?php echo $row["coaches_id"]; ?>
-            </td>
-            <td>
+            <td class="tableCoachname">
                 <?php echo $row["coaches_name"]; ?>
             </td>
             <td class="tableDescription">

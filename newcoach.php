@@ -1,4 +1,9 @@
 <?php
+session_start();
+if(!isset($_SESSION['login'])) {
+    header ("Location: inlog.php");
+}
+
 require('dbconnect.php');
 include('head.php');
 session_start();
@@ -10,7 +15,7 @@ if (!(isset($_SESSION['login']) && $_SESSION['login'] != '')) {
 $status = "";
 if(isset($_POST['new']) && $_POST['new']==1)
 {
-    $type = $_REQUEST['type'];
+    $type = '1';
     $image = 'images/ppic.png';
     $name =$_REQUEST['name'];
     $description =$_REQUEST['description'];
@@ -23,18 +28,15 @@ if(isset($_POST['new']) && $_POST['new']==1)
 <div class="container">
     <h2 class="overzichtTitle">Nieuwe coach</h2>
 
-<div class="form">
-    <div>
+    <div class="coachForm">
         <form name="form" method="post" action="">
             <input type="hidden" name="new" value="1" />
-            <p><input type="text" name="type" placeholder="Type 1 of 0" required /></p>
-            <p><input type="text" name="name" placeholder="Naam" required /></p>
+            <p><input type="text" name="name" placeholder="Naam" width="50" height="6" required /></p>
             <p><input type="text" name="description" placeholder="Omschrijving" required /></p>
-            <p><input name="submit" type="submit" value="Submit" /></p>
+            <p><input name="submit" type="submit" value="Voeg toe" /></p>
         </form>
         <br>
         <p><?php echo $status; ?></p>
     </div>
-</div>
 
 <?php include ('footer.php');

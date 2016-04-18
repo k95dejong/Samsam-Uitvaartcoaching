@@ -20,7 +20,7 @@
       <!-- Example row of columns -->
       <div class="row">
 		<div class="col-md-12">
-			<div class="motto"><h4>Samen <small>een uitvaart organiseren.</small> Anders <small>want een uitvaart mag geen schuldenlast worden.</small> Minder <small>accent op gecommercialiseerde rituelen.</small></h4><hr></div>
+			<div class="motto"><h4>S<small>amen een uitvaart organiseren.</small> A<small>nders want een uitvaart mag geen schuldenlast worden.</small> M<small>inder accent op gecommercialiseerde rituelen.</small></h4><hr></div>
 		</div>
 	  </div>
 

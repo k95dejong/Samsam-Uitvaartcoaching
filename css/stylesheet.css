@@ -51,8 +51,16 @@ a#current {
 /* ======================== HOMEPAGE ======================== */
 
 .jumbotron {
-	background-image: url('../images/jumbo-bg3.png');
+	background-image: url('../images/jumbo-bg5.jpg');
 	background-color: #E2E2E2;
+}
+
+@media screen and (min-width: 768px) {
+	.jumbotron {
+		background-image: url('../images/jumbo-bg6.jpg');
+		background-color: #E2E2E2;
+		background-size: 100% 560px;
+	}
 }
 
 .logo-big {
@@ -67,12 +75,12 @@ h2, h4 {
 	text-align: center;
 }
 
-/* ======================== CONTACT ======================== */
-
-form {
-	margin-top: 10em;
+.motto h4 {
+	font-size: 23px;
+	margin-top: 0px;
 }
 
+/* ======================== CONTACT ======================== */
 .well {
 	border: 1px solid #00a3db
 }
@@ -81,6 +89,7 @@ form {
 .jumbotroncoaches {
     padding-bottom: 15px;
     margin-bottom: 50px;
+	background-image: url('../images/jumbo-bg5.jpg');
 }
 
 .coachesintro {
@@ -121,6 +130,10 @@ form {
 }
 
 /* ======================== LOGIN ======================== */
+.inlogveld {
+	margin-top: 100px;
+}
+
 .loginError {
 	color: red;
 	margin-top: 10px;
@@ -132,8 +145,12 @@ form {
 	float: right;
 }
 
+.plusSign:hover {
+	text-decoration: none;
+}
+
 .overzichtTitle {
-	margin-top: 100px;
+	margin-top: 75px;
 	margin-bottom: 20px;
 }
 
@@ -145,5 +162,18 @@ form {
 
 .coachesList td, .coachesList th {
 	border: 1px solid #e2e2e2;
+	text-align: center;
 }
 
+.tableCoachname {
+	 width: 10%;
+}
+
+.tableDescription {
+	width: 70%;
+}
+
+/* ======================== EDIT COACH ======================== */
+.coachForm {
+	margin-top: 20px;
+}
