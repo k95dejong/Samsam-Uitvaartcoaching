@@ -20,20 +20,20 @@
       <!-- Example row of columns -->
       <div class="row">
 		<div class="col-md-12">
-			<div class="motto"><h4>S<small>amen een uitvaart organiseren.</small> A<small>nders want een uitvaart mag geen schuldenlast worden.</small> M<small>inder accent op gecommercialiseerde rituelen.</small></h4><hr></div>
+			<div class="motto"><h4>S<small>amen een uitvaart organiseren.</small><br> A<small>nders want een uitvaart mag geen schuldenlast worden.</small><br> M<small>inder accent op gecommercialiseerde rituelen.</small></h4><hr></div>
 		</div>
 	  </div>
 
 	  <div class="row">
           <div class="col-md-4">
+          <h2>Nieuws</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <p><a class="btn btn-default" href="#" role="button">Meer &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
           <h2>Coaches</h2>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="coaches.php" role="button">Meer &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Fondsen</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">Meer &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <h2>Contact</h2>

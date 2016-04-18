@@ -50,8 +50,8 @@
             <div class="nav navbar-nav navbar-right">
                 <li><a href="index.php" <?php if ($pageName=="Home") echo 'id="current"'; ?> >Home</a></li>
                 <li><a href="#" <?php if ($pageName=="Informatie") echo 'id="current"'; ?> >Informatie</a></li>
+                <li><a href="#" <?php if ($pageName=="Nieuws") echo 'id="current"'; ?> >Nieuws</a></li>
                 <li><a href="coaches.php" <?php if ($pageName=="Coaches") echo 'id="current"'; ?> >Coaches</a></li>
-                <li><a href="#" <?php if ($pageName=="Bestuur") echo 'id="current"'; ?> >Bestuur</a></li>
                 <li><a href="contact.php" <?php if ($pageName=="Contact") echo 'id="current"'; ?> >Contact</a></li>
             </div>
         </div><!--/.navbar-collapse -->
