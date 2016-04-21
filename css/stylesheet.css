@@ -184,3 +184,8 @@ h2, h4 {
 .coachForm {
 	margin-top: 20px;
 }
+
+.formLarge {
+	width: 500px;
+	height: 500px;
+}

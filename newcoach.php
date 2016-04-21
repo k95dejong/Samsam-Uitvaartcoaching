@@ -8,10 +8,6 @@ require('dbconnect.php');
 include('head.php');
 session_start();
 
-if (!(isset($_SESSION['login']) && $_SESSION['login'] != '')) {
-    header ("Location: inlog.php");
-}
-
 $status = "";
 if(isset($_POST['new']) && $_POST['new']==1)
 {
@@ -31,7 +27,7 @@ if(isset($_POST['new']) && $_POST['new']==1)
     <div class="coachForm">
         <form name="form" method="post" action="">
             <input type="hidden" name="new" value="1" />
-            <p><input type="text" name="name" placeholder="Naam" width="50" height="6" required /></p>
+            <p><input type="text" name="name" placeholder="Naam" required /></p>
             <p><input type="text" name="description" placeholder="Omschrijving" required /></p>
             <p><input name="submit" type="submit" value="Voeg toe" /></p>
         </form>
