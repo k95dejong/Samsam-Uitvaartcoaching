@@ -1,4 +1,5 @@
 <?php
+// Check if user is logged in, otherwise send to login page
 session_start();
 if(!isset($_SESSION['login'])) {
     header ("Location: inlog.php");

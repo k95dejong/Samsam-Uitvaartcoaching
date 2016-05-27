@@ -1,7 +1,10 @@
 <?php
+// Log in validator
 session_start(); $username = $password = $userError = $passError = '';
+
+// Check if password and username are correct
 if(isset($_POST['submit'])){
-    $username = $_POST['username']; $password = $_POST['password'];
+    $username = htmlentities($_POST['username']); $password = htmlentities($_POST['password']);
     if($username === 'admin' && $password === 'admin'){
         $_SESSION['login'] = true; header('LOCATION:coacheslist.php'); die();
     }
@@ -14,8 +17,8 @@ include ('head.php'); ?>
 <div class="container">
     <div class="inlogveld">
         <form action="" method="POST">
-            <input type="text" name="username" placeholder="Username"><br><br>
-            <input type="password" name="password" placeholder="Password"><br><br>
+            <input type="text" name="username" placeholder="Gebruikersnaam"><br><br>
+            <input type="password" name="password" placeholder="Wachtwoord"><br><br>
             <input type="submit" name="submit" value="Login">
         </form>
 

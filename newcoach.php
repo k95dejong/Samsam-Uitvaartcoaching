@@ -1,4 +1,5 @@
 <?php
+// Check if user is logged in, otherwise send to login page
 session_start();
 if(!isset($_SESSION['login'])) {
     header ("Location: inlog.php");
@@ -6,8 +7,8 @@ if(!isset($_SESSION['login'])) {
 
 require('dbconnect.php');
 include('head.php');
-session_start();
 
+// Creation of new coach to database
 $status = "";
 if(isset($_POST['new']) && $_POST['new']==1)
 {

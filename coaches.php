@@ -13,21 +13,21 @@
         <div class="coaches">
             <?php
             $count = 1;
-            //run the query
+            // Run query
             $sql = "SELECT * FROM `coaches` WHERE `coaches_type` = 1";
             $result = $conn->query($sql);
 
             $rowcount=mysqli_num_rows($result);
 
             if ($result->num_rows > 0) {
-                // output data of each row
+                // Output data of each row
                 while ($row = $result->fetch_assoc()) {
                     $image = $row["coaches_image"];
                     $name = $row["coaches_name"];
                     $description = $row["coaches_description"];
                     $id = $row["coaches_id"];
 
-                    if (($count === 1) || ($count === 4)) {
+                    if (($count === 1) || ($count === 4) || ($count === 7))  { // Start of a new row at 1st, 4th and 7th coach
                         echo '<div class="row">';
                     };
 
@@ -38,7 +38,7 @@
                           <p>' . $description . '</p>
                           </div>';
 
-                    if (    ($count === 3)|| ($count === 6 )) {
+                    if (    ($count === 3)|| ($count === 6 ) || ($count === 9 )) { // End of a row at 3rd, 6th and 9th coach
                          echo '</div>';
                     };
 

@@ -22,10 +22,10 @@ include('dbconnect.php'); ?>
     </thead>
     <tbody>
     <?php
-
+    // Retrieve coaches from database query
     $sql="SELECT * FROM coaches;";
     $result = $conn->query($sql);
-
+    // List of coaches with links to edit pages
     while($row = $result->fetch_assoc()) { ?>
         <tr>
             <td class="tableCoachname">
